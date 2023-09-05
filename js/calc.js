@@ -8,42 +8,50 @@ let num = document.querySelectorAll('.numb>button')
 document.getElementsByClassName('jam')[0].addEventListener('click',(e)=>{
     a = document.getElementById('bord').value
     document.getElementById('bord').value=''
+    document.getElementsByTagName('span')[0].innerHTML= a+'+'
     document.getElementById('bord').focus()
     b = 1
 })
 document.getElementsByClassName('kam')[0].addEventListener('click',(e)=>{
     a = document.getElementById('bord').value
     document.getElementById('bord').value=''
+    document.getElementsByTagName('span')[0].innerHTML= a+'-'
     document.getElementById('bord').focus()
     b = 2
 })
 document.getElementsByClassName('zarb')[0].addEventListener('click',(e)=>{
     a = document.getElementById('bord').value
     document.getElementById('bord').value=''
+    document.getElementsByTagName('span')[0].innerHTML= a+'x'
     document.getElementById('bord').focus()
     b = 3
 })
 document.getElementsByClassName('tagh')[0].addEventListener('click',(e)=>{
     a = document.getElementById('bord').value
     document.getElementById('bord').value=''
+    document.getElementsByTagName('span')[0].innerHTML= a+'÷'
     document.getElementById('bord').focus()
     b = 4
 })
 document.getElementsByClassName('tavan')[0].addEventListener('click',(e)=>{
     a = document.getElementById('bord').value
     document.getElementById('bord').value=''
+    document.getElementsByTagName('span')[0].innerHTML= a+'^'
     document.getElementById('bord').focus()
     b = 5
 })
 document.getElementsByClassName('darsad')[0].addEventListener('click',(e)=>{
     a = document.getElementById('bord').value
     document.getElementById('bord').value=''
+    document.getElementsByTagName('span')[0].innerHTML= a+'%'
     document.getElementById('bord').focus()
     b = 6
 })
 document.getElementsByClassName('jazr')[0].addEventListener('click',(e)=>{
     a = document.getElementById('bord').value
+    sum = Math.sqrt(Number(a))
     document.getElementById('bord').value=''
+    document.getElementsByTagName('span')[0].innerHTML= sum
     document.getElementById('bord').focus()
     b = 7
 })
