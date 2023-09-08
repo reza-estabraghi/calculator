@@ -120,3 +120,18 @@ zar.forEach((val)=>{
         val.style.backgroundColor="rgb(29, 29, 29)"
     })
 })
+document.getElementsByClassName('on')[0].addEventListener('click',()=>{
+    document.getElementsByClassName('dar')[0].style.transform=`perspective(800px) rotateY(180deg) translateZ(500px)`
+    document.getElementsByClassName('dar')[0].style.zIndex='-99'
+    document.getElementById('bord').focus()
+})
+document.getElementsByClassName('off')[0].addEventListener('click',()=>{
+    document.getElementsByClassName('dar')[0].style.transform=`perspective(800px) rotateY(0deg) translateZ(0px)`
+    document.getElementsByClassName('dar')[0].style.zIndex='99'
+    a = 0
+    sum = 0
+    b = 0
+    c = 0
+    document.getElementById('bord').value=''
+    document.getElementsByTagName('span')[0].innerHTML=''
+})
